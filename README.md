@@ -1,4 +1,4 @@
-# The Infinite Nightmare
+# The Infinite Nightmare Official
 
 A liminal Horror Game based on The Backrooms with immersive exploration, need-to-think puzzles, and skin-crawling entities.
 
