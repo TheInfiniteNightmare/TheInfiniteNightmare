@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Chapters | The Infinite Nightmare</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================================
+         LOADING SCREEN
+    ========================================== -->
+
+    <div id="loading-screen">
+
+        <div class="loading-content">
+
+            <img
+                src="images/play-studio-logo.png"
+                alt="Play Studio"
+                id="loading-logo"
+            >
+
+            <p>LOADING...</p>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================================
+         NAVIGATION
+    ========================================== -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            PLAY STUDIO
+        </div>
+
+        <nav class="navigation">
+
+            <a href="index.html">
+                HOME
+            </a>
+
+            <a href="about.html">
+                ABOUT
+            </a>
+
+            <a href="team.html">
+                THE INFINITE TEAM
+            </a>
+
+            <a href="chapters.html" class="active">
+                CHAPTERS
+            </a>
+
+            <a href="store.html">
+                THE INFINITE NIGHTMARE STORE
+            </a>
+
+            <a href="socials.html">
+                SOCIALS
+            </a>
+
+        </nav>
+
+        <a
+            href="https://discord.gg/vt2DTQj7E9"
+            class="discord-button"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            JOIN OUR DISCORD
+        </a>
+
+    </header>
+
+
+    <!-- =========================================
+         CHAPTERS PAGE
+    ========================================== -->
+
+    <main class="chapters-page">
+
+        <!--
+            Background layer.
+            JavaScript will change this for every chapter.
+        -->
+
+        <div
+            id="chapterBackground"
+            class="chapter-background"
+        ></div>
+
+
+        <!-- Dark overlay -->
+
+        <div class="chapter-overlay"></div>
+
+
+        <!-- =====================================
+             CHAPTER MENU
+        ====================================== -->
+
+        <aside class="chapter-menu">
+
+            <div class="chapter-menu-header">
+
+                <p>
+                    THE INFINITE NIGHTMARE
+                </p>
+
+                <h1>
+                    CHAPTERS
+                </h1>
+
+            </div>
+
+
+            <div class="chapter-buttons">
+
+                <button
+                    class="chapter-button active"
+                    data-chapter="1"
+                >
+                    <span class="chapter-button-number">
+                        01
+                    </span>
+
+                    <span class="chapter-button-text">
+                        CHAPTER 1
+                    </span>
+                </button>
+
+
+                <button
+                    class="chapter-button"
+                    data-chapter="2"
+                >
+                    <span class="chapter-button-number">
+                        02
+                    </span>
+
+                    <span class="chapter-button-text">
+                        CHAPTER 2
+                    </span>
+                </button>
+
+
+                <button
+                    class="chapter-button"
+                    data-chapter="3"
+                >
+                    <span class="chapter-button-number">
+                        03
+                    </span>
+
+                    <span class="chapter-button-text">
+                        CHAPTER 3
+                    </span>
+                </button>
+
+
+                <button
+                    class="chapter-button"
+                    data-chapter="4"
+                >
+                    <span class="chapter-button-number">
+                        04
+                    </span>
+
+                    <span class="chapter-button-text">
+                        CHAPTER 4
+                    </span>
+                </button>
+
+            </div>
+
+        </aside>
+
+
+        <!-- =====================================
+             CHAPTER CONTENT
+        ====================================== -->
+
+        <section class="chapter-content">
+
+
+            <!-- Chapter title -->
+
+            <div class="chapter-heading">
+
+                <p
+                    id="chapterSubtitle"
+                    class="chapter-subtitle"
+                >
+                    THE BEGINNING
+                </p>
+
+                <h2
+                    id="chapterTitle"
+                    class="chapter-title"
+                >
+                    CHAPTER 1
+                </h2>
+
+            </div>
+
+
+            <!-- =================================
+                 ENTITY
+            ================================== -->
+
+            <div class="chapter-entity-container">
+
+                <img
+                    id="chapterEntity"
+                    class="chapter-entity"
+                    src=""
+                    alt="Chapter Entity"
+                >
+
+            </div>
+
+
+            <!-- =================================
+                 STORY
+            ================================== -->
+
+            <div class="chapter-story-container">
+
+                <div class="chapter-story-header">
+
+                    <span>
+                        STORY
+                    </span>
+
+                    <button
+                        id="speakerButton"
+                        class="speaker-button"
+                        type="button"
+                    >
+
+                        <span class="speaker-icon">
+                            ▶
+                        </span>
+
+                        <span id="speakerText">
+                            READ STORY
+                        </span>
+
+                    </button>
+
+                </div>
+
+
+                <div
+                    id="chapterStory"
+                    class="chapter-story"
+                >
+                    <!-- Story inserted by chapters.js -->
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+        <!-- =====================================
+             CHAPTER MUSIC
+        ====================================== -->
+
+        <audio
+            id="chapterMusic"
+            loop
+            preload="auto"
+        ></audio>
+
+
+        <!-- =====================================
+             CHAPTER TRANSITION
+        ====================================== -->
+
+        <div
+            id="chapterTransition"
+            class="chapter-transition-screen"
+        ></div>
+
+    </main>
+
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+
+    <footer>
+
+        <p>
+            © 2026 PLAY STUDIO
+        </p>
+
+        <p>
+            SITE CREATED BY x4nth_ (Anth)
+        </p>
+
+    </footer>
+
+
+    <!-- =========================================
+         SCRIPTS
+    ========================================== -->
+
+    <script src="chapters.js"></script>
+
+</body>
+
+</html>
